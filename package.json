@@ -2,10 +2,7 @@
   "name": "remark-boilerplate",
   "version": "0.1.0",
   "description": "A boilerplate to create presentations using remark, Gulp, Stylus and more",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "homepage": "https://github.com/brenopolanski/remark-boilerplate#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/brenopolanski/remark-boilerplate.git"
@@ -19,12 +16,16 @@
     "jade",
     "highlight"
   ],
-  "author": "Breno Polanski",
+  "author": {
+    "name": "Breno Polanski",
+    "email": "breno.polanski@gmail.com",
+    "web": "http://brenopolanski.com",
+    "twitter": "brenopolanski"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/brenopolanski/remark-boilerplate/issues"
   },
-  "homepage": "https://github.com/brenopolanski/remark-boilerplate#readme",
   "devDependencies": {
     "browser-sync": "^2.11.1",
     "gulp": "^3.9.1",
