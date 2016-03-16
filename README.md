@@ -62,27 +62,90 @@ With the commands above, you have everything to start.
 ├── gulpfile.js
 ├── package.json
 ├── README.md
-├── src
-│   ├── js
-│   │   ├── main.js
-│   │   └── vendor
-│   │       ├── remark-fallback.js
-│   │       ├── remark-language.js
-│   │       └── remark.min.js
-│   ├── slides
-│   │   ├── slide-1.md
-│   │   ├── slide-2.md
-│   │   └── slide-3.md
-│   ├── styl
-│   │   ├── main.styl
-│   │   ├── remark-themes
-│   │   │   └── default.styl
-│   │   └── vendor
-│   │       └── remark.styl
-│   └── templates
-│       ├── inc
-│       │   ├── head.jade
-│       │   └── scripts.jade
-│       └── index.jade
-└── tree.txt
+└── src
+    ├── js
+    │   ├── main.js
+    │   └── vendor
+    │       ├── remark-fallback.js
+    │       ├── remark-language.js
+    │       └── remark.min.js
+    ├── slides
+    │   ├── slide-1.md
+    │   ├── slide-2.md
+    │   └── slide-3.md
+    ├── styl
+    │   ├── main.styl
+    │   ├── remark-themes
+    │   │   └── default.styl
+    │   └── vendor
+    │       └── remark.styl
+    └── templates
+        ├── inc
+        │   ├── head.jade
+        │   └── scripts.jade
+        └── index.jade
+
 ```
+
+### How to Use
+
+- Write your slides in `src/slides` folder in separated files using the [Markdown syntax](https://github.com/gnab/remark/wiki/Markdown) and add them on `templates/index.jade`.
+
+- If you want to add another scripts and css use the `templates/inc/` folder and call them in the  `templates/index.jade`.
+
+- Look for different themes on [src/styl/remark-themes](https://github.com/brenopolanski/remark-boilerplate/tree/master/src/styl/remark-themes) and call them on [src/styl/main.styl](https://github.com/brenopolanski/remark-boilerplate/blob/master/src/styl/main.styl). 
+
+- For highlight themes you can see in [remark Wiki](https://github.com/gnab/remark/wiki/Configuration#highlighting).
+
+### How to use with git and deploy to Github Pages
+
+When you clone this repo, every git information will be downloaded to. So, you have to remove all my git stuff to create yours.
+
+```sh
+# Inside of your project runs to remove git folder.
+rm -Rf .git
+```
+
+Next, initialize your git repository:
+
+```sh
+# init the repo
+git init
+```
+
+Commit all files:
+
+```sh
+# add all files to commit
+git add .
+# create a commit
+git commit -m "Initial commit"
+```
+
+The first deploy needs to be manual:
+
+```sh
+# creates a gh-pages branch
+git checkout -b gh-pages
+
+# push and track the gh-pages branch
+git push --set-upstream origin gh-pages
+```
+
+To do next deploys, you just have to run with gulp:
+
+```sh
+# will create a .publish folder with build content
+# and push to gh-pages branch.
+gulp deploy-pages
+```
+
+### Tasks
+
+- `gulp`: Initialize watch for changes and a server(localhost:3000)
+- `gulp js`: execute js files
+- `gulp stylus`: compile stylus files
+- `gulp imagemin`:compress image files
+- `gulp watch`: call for watch files
+- `gulp jade`: compile jade files
+- `gulp deploy-pages`: deploy compiled files at `build` to `github` on branch `gh-pages`.
