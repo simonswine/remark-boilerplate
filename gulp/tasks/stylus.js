@@ -3,7 +3,7 @@
 // Necessary Plugins
 var gulp    = require('gulp');
 var plumber = require('gulp-plumber');
-var stylus  = require('stylus');
+var stylus  = require('gulp-stylus');
 var paths   = require('../paths');
 
 // Call Stylus

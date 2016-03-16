@@ -3,7 +3,7 @@
 // Necessary Plugins
 var gulp    = require('gulp');
 var plumber = require('gulp-plumber');
-var uglify  = require('uglify');
+var uglify  = require('gulp-uglify');
 var paths   = require('../paths');
 
 // Call Uglify and concat JS

@@ -2,7 +2,7 @@
 
 // Necessary Plugins
 var gulp        = require('gulp');
-var browserSync = require('../browser-sync');
+var browserSync = require('browser-sync');
 var paths       = require('../paths');
 
 // Serve files from /www/

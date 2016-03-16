@@ -3,8 +3,8 @@
 // Necessary Plugins
 var gulp    = require('gulp');
 var plumber = require('gulp-plumber');
+var jade    = require('gulp-jade');
 var fs      = require('fs');
-var jade    = require('jade');
 var paths   = require('../paths');
 
 // Call Jade to compile templates
