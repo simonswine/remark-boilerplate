@@ -142,10 +142,22 @@ gulp deploy-pages
 
 ### Tasks
 
-- `gulp`: Initialize watch for changes and a server(localhost:3000)
-- `gulp js`: execute js files
-- `gulp stylus`: compile stylus files
-- `gulp imagemin`:compress image files
-- `gulp watch`: call for watch files
-- `gulp jade`: compile jade files
-- `gulp deploy-pages`: deploy compiled files at `build` to `github` on branch `gh-pages`.
+- `gulp`: Initialize watch for changes and a server (localhost:3000);
+- `gulp js`: Execute js files;
+- `gulp stylus`: Compile stylus files;
+- `gulp imagemin`: Compress image files;
+- `gulp watch`: Call for watch files;
+- `gulp jade`: Compile jade files;
+- `gulp deploy-pages`: Deploy compiled files at `build` to `github` on branch `gh-pages`.
+
+## Contributing
+
+If you want to help, please read the [Contributing](https://github.com/brenopolanski/remark-boilerplate/blob/master/CONTRIBUTING.md) guide.
+
+## History
+
+For detailed changelog, see [Releases](https://github.com/brenopolanski/remark-boilerplate/releases).
+
+## License
+
+[MIT License](http://brenopolanski.mit-license.org/) © Breno Polanski
