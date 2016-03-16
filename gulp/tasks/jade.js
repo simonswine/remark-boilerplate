@@ -4,7 +4,6 @@
 var gulp    = require('gulp');
 var plumber = require('gulp-plumber');
 var jade    = require('gulp-jade');
-var fs      = require('fs');
 var paths   = require('../paths');
 
 // Call Jade to compile templates

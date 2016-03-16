@@ -3,8 +3,8 @@
 // Necessary Plugins
 var gulp     = require('gulp');
 var plumber  = require('gulp-plumber');
-var imagemin = require('gulp-imagemin');
 var cache    = require('gulp-cache');
+var imagemin = require('gulp-imagemin');
 var paths    = require('../paths');
 
 // Call Imagemin
