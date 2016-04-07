@@ -35,7 +35,7 @@ $ gulp
 ```
 With the commands above, you have everything to start.
 
-```sh
+```
 .
 ├── build
 │   ├── css
