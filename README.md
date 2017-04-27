@@ -14,6 +14,8 @@ This is a boilerplate to use [remark](https://github.com/gnab/remark) easily wit
 
 To know more about remark and how to use, [read the docs here](https://github.com/gnab/remark/wiki).
 
+Check our [demo](http://brenopolanski.com/remark-boilerplate/) or this [remark slideshow](http://gnab.github.com/remark) for a brief introduction.
+
 ## Getting Started
 
 ### Installation
