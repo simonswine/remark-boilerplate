@@ -1,12 +1,12 @@
 ```
-______                          _     ______       _ _                 _       _       
-| ___ \                        | |    | ___ \     (_) |               | |     | |      
-| |_/ /___ _ __ ___   __ _ _ __| | __ | |_/ / ___  _| | ___ _ __ _ __ | | __ _| |_ ___ 
+______                          _     ______       _ _                 _       _
+| ___ \                        | |    | ___ \     (_) |               | |     | |
+| |_/ /___ _ __ ___   __ _ _ __| | __ | |_/ / ___  _| | ___ _ __ _ __ | | __ _| |_ ___
 |    // _ \ '_ ` _ \ / _` | '__| |/ / | ___ \/ _ \| | |/ _ \ '__| '_ \| |/ _` | __/ _ \
 | |\ \  __/ | | | | | (_| | |  |   <  | |_/ / (_) | | |  __/ |  | |_) | | (_| | ||  __/
 \_| \_\___|_| |_| |_|\__,_|_|  |_|\_\ \____/ \___/|_|_|\___|_|  | .__/|_|\__,_|\__\___|
-                                                                | |                    
-                                                                |_|                    
+                                                                | |
+                                                                |_|
 
 ```
 
@@ -29,7 +29,7 @@ $ git clone git@github.com:brenopolanski/remark-boilerplate.git my-presentation
 $ cd my-presentation
 
 # install dependencies
-$ npm install
+$ yarn (or npm i)
 # run tasks and serve
 $ gulp
 ```
@@ -93,7 +93,7 @@ With the commands above, you have everything to start.
 
 - If you want to add another scripts and css use the `templates/inc/` folder and call them in the  `templates/index.jade`.
 
-- Look for different themes on [src/styl/remark-themes](https://github.com/brenopolanski/remark-boilerplate/tree/master/src/styl/remark-themes) and call them on [src/styl/main.styl](https://github.com/brenopolanski/remark-boilerplate/blob/master/src/styl/main.styl). 
+- Look for different themes on [src/styl/remark-themes](https://github.com/brenopolanski/remark-boilerplate/tree/master/src/styl/remark-themes) and call them on [src/styl/main.styl](https://github.com/brenopolanski/remark-boilerplate/blob/master/src/styl/main.styl).
 
 - For highlight themes you can see in [remark Wiki](https://github.com/gnab/remark/wiki/Configuration#highlighting).
 
