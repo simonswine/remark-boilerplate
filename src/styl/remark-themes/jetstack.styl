@@ -1,28 +1,72 @@
+$backgroundColorDark = #0e121d
+$backgroundColorLight = #eee
+$backgroundColorStrong = #03b4f9
+
 body
-  font-family "Droid Serif"
 
 h1
 h2
 h3
   margin-bottom 0
-  font-family "Yanone Kaffeesatz"
-  font-weight 400
 
 .remark-slide-content
   h1
-    font-size 3em
-  h2
     font-size 2em
+    font-weight 700
+  h2
+    font-size 1.5em
+    font-weight 600
   h3
-    font-size 1.6em
+    font-size 1.2em
+    font-weight 500
 
 .footnote
   position absolute
   bottom 3em
 
+img
+  max-width 30%
+
 li 
   p
     line-height 1.25em
+
+.remark-slide-content
+  background-repeat no-repeat
+  background-attachment fixed
+  background-size 100px 100px
+  background-position 95% 5%
+
+svg
+  fill currentColor
+  border 5px solid currentColor
+
+.strong
+  background-color: $backgroundColorStrong
+  color #fff
+  background-image url("/img/jetstack-symbol.svg")
+  background-repeat no-repeat
+  background-attachment fixed
+  background-size 100px 100px
+  background-position 95% 5%
+
+.front
+  background-color: $backgroundColorDark
+  background-image url("/img/turbine.jpg"), url("/img/jetstack-full-white.svg")
+  background-repeat no-repeat, no-repeat
+  background-attachment fixed, fixed
+  background-size 40%, 20%
+  background-position 110% 110%, 20px 20px
+  color #fff
+  padding-right: 30%
+
+.front
+  h1
+  h2
+  h3
+  h4
+  h5
+    text-align: left
 
 .red
   color #fa0000
